@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>8</title>
+	</head>
+	<body>
+		<h1>きょうはなんの日？</h1>
+		<p>今日は<span id="output1">〇〇</span>です。</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			const now = new Date();
+			let m = now.getMonth() + 1;
+			let d = now.getDate();
+			m = 1; d = 1; //チェック用
+			let nani;
+			if (m === 1 && d === 1) {
+				nani = "正月";
+			} else if (m === 12 && d === 24) {
+				nani = "クリスマス";
+			} else if (m === 12 && d === 31) {
+				nani = "大晦日";
+			} else {
+				nani = "なんでもない日バンザイ！";
+			}
+			output1.innerHTML = nani;
+		</script>
+		</script>
+	</body>
+</html>

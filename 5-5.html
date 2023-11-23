@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>5</title>
+	</head>
+	<body>
+		<button onclick="btn1();">ボタン1</button>
+		<p id="output1">出力場所</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			function btn1() {
+				const week = new Array("日", "月", "火", "水", "木", "金", "土");
+				output1.innerHTML = week[1];
+			}
+		</script>
+	</body>
+</html>
