@@ -1,1 +1,353 @@
-JS
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Google Analytics -->
+		<script src="./ga.js"></script>
+		<link rel="icon" href="favicon.ico">
+		<meta charset="utf-8">
+		<title>授業ページ|JavaScriptプログラミング</title>
+		<meta name="viewport" content="width=device-width">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 16px;
+				list-style-type: none;
+				font-family: sans-serif;
+			}
+
+			body {
+				/*background-color: #666;
+				color: white;*/
+			}
+
+			header h1 {
+				text-shadow: 3px 3px 3px #aaa;
+				font-size: 1.3em;
+				line-height: 6em;
+				text-align: center;
+				background: url(yashiman.png) no-repeat;
+				background-size: auto 100%;
+				background-position: 100% 0;
+				animation: yashimaru 10s linear 10s 1 normal;
+			}
+
+			@keyframes yashimaru {
+				50% {
+					background-position: 20% 0;
+				}
+
+				70% {
+					background-position: 10% 0;
+				}
+
+				72% {
+					background-position: 12% 0;
+				}
+
+				74% {
+					background-position: 10% 0;
+					background-image: url(yashiman.png);
+				}
+
+				74.5% {
+					background-image: url(yashimaru.png);
+				}
+
+				80% {
+					background-position: 15% 0;
+				}
+
+				82% {
+					background-position: 20% 0;
+				}
+
+				90% {
+					background-position: 20% 0;
+				}
+
+				93% {
+					background-position: 100% 0;
+				}
+
+				95% {
+					background-position: 20% 0;
+				}
+
+				96% {
+					background-image: url(yashimaru.png);
+				}
+
+				97% {
+					background-image: url(yashiman.png);
+				}
+			}
+
+			header p {
+				background-color: #eee;
+				padding: 5px;
+				border-radius: 20px;
+				text-align: center;
+				margin: 3px 0;
+			}
+
+			#msg {
+				color: yellow;
+				margin: 0 17px;
+			}
+
+			#wrap {
+				max-width: 800px;
+				margin: 0 auto;
+			}
+
+			h3,
+			h4 {
+				text-indent: 0.5em;
+				padding-top: 0px;
+			}
+
+			section {
+				margin: 5px;
+				border: 1px solid gray;
+				border-radius: 10px;
+				overflow: hidden;
+				flex: 1;
+				/*background-color: #333;*/
+			}
+
+			section h2 {
+				background-color: #eee;
+				padding: 10px;
+			}
+
+			ol {
+				list-style: none;
+				margin: 10px;
+			}
+
+			.flex {
+				display: flex;
+			}
+
+			footer {
+				text-align: center;
+			}
+
+			li::before {
+				content: "🍎"
+			}
+
+			li:hover::before {
+				content: "🍏"
+			}
+
+			a {
+				text-decoration: none;
+				color: brown;
+			}
+
+			li:hover a {
+				color: lime;
+			}
+
+			#shusei {
+				border: 3px dotted white;
+				border-radius: 1em;
+				padding: 0.5em;
+				margin: 5px;
+			}
+
+			@media(max-width:600px) {
+				.flex {
+					display: block;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<h1>JavaScriptプログラミング 授業ページ</h1>
+			</header>
+			<main>
+				<p id="msg"></p>
+				<div class="flex">
+					<section>
+						<h2>1.インターネットとWeb</h2>
+						<h3>いろいろなWebページ</h3>
+						<h4>1-1. 黎明期</h4>
+						<ol>
+							<li><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">CERN</a></li>
+							<li><a
+									href="https://commons.wikimedia.org/wiki/File:WorldWideWebAroundWikipedia.png#/media/ファイル:WorldWideWebAroundWikipedia.png">Webを可視化したもの</a>
+							</li>
+						</ol>
+						<h3>2-1. 標準的</h3>
+						<ol>
+							<li><a href="https://www.yashima.ac.jp/univ/">八洲学園大学</a></li>
+						</ol>
+						<h3>2-2. 今どき</h3>
+						<ol>
+							<li><a href="https://eco-island.jp/">動画を用いたサイト</a></li>
+							<li><a href="https://humans-in-space.jaxa.jp//">レスポンシブウエブデザイン</a></li>
+							<li><a href="https://prinzhorn.github.io/skrollr/">パララックス(視差効果)</a></li>
+							<li><a href="http://jojodesign.jp/">Canvas描画</a></li>
+							<li><a target="_blank" href="https://www.google.com/doodles/roswells-66th-anniversary">Google doodles</a>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<h2>2.教材</h2>
+						<ol>
+							<li><a
+									href="https://renshukun.azurewebsites.net/renshuKun/index.php?course=yashima-HTML5"><b>簡易テキストエディタ「練習くん」</b></a>
+							</li>
+							<li><a href="https://note.com/_nakashimmer_/n/n8a5563d15fea">参考：テキストエディタ(VSCode)</a></li>
+						</ol>
+					</section>
+					<section>
+						<h2>3.HTMLの基本(1)大まかなHTML</h2>
+						<ol>
+							<li><a href="finish/3/3.html">3.準備</a></li>
+							<li><a href="finish/3/3-1.html">3.1.記述</a></li>
+							<li><a href="finish/3/3-2.html">3.2.大まかな構造</a></li>
+						</ol>
+					</section>
+				</div>
+				<div class=flex>
+					<section>
+						<h2>4.HTMLの基本(2)入れ物のHTML</h2>
+						<ol>
+							<li><a href="finish/4/4-1.html">4.1.head要素</a></li>
+							<li><a href="finish/4/4-2.html">4.2.body要素</a></li>
+							<li><a href="finish/4/4-3.html">4.3.header要素</a></li>
+							<li><a href="finish/4/4-4.html">4.4.nav要素</a></li>
+							<li><a href="finish/4/4-5.html">4.5.main要素</a></li>
+							<li><a href="finish/4/4-6.html">4.6.footer要素</a></li>
+						</ol>
+					</section>
+					<section>
+						<h2>5.HTMLの基本(3)文字の中のHTML</h2>
+						<ol>
+							<li><a href="finish/5/5.html">5.準備</a></li>
+							<li><a href="finish/5/5-1.html">5.1.強調・重要</a></li>
+							<li><a href="finish/5/5-2.html">5.2.引用</a></li>
+							<li><a href="finish/5/5-3.html">5.3.ルビ</a></li>
+							<li><a href="finish/5/5-4.html">5.4.コード・整形済テキスト</a></li>
+							<li><a href="finish/5/5-5.html">5.5.添字</a></li>
+							<li><a href="finish/5/5-6.html">5.6.画像</a></li>
+							<li><a href="https://www.irasutoya.com/">イラストや</a></li>
+							<li><a href="finish/5/5-7.html">5.7.映像</a></li>
+							<li><a href="finish/5/5-8.html">5.8.音声</a></li>
+						</ol>
+						<h3>画像素材</h3>
+						<ol>
+							<li><a href="https://www.irasutoya.com/">いらすとや</a></li>
+							<li><a href="finish/5/media/irasutoya.png">いらすとや画像</a></li>
+							<li><a href="finish/5/media/yashimaru.png">やしまる画像</a></li>
+							<li><a href="finish/5/media/yashiman.png">やしまん画像</a></li>
+							<li><a href="finish/5/media/yashimaruyashiman.png">やしまる＆やしまん画像</a></li>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<h2>6.HTMLの基本(4)アプリケーション用のHTML</h2>
+						<ol>
+							<li><a href="finish/6/6-1.html">6.1.入力</a></li>
+							<li><a href="finish/6/6-2.html">6.2.描画</a></li>
+						</ol>
+					</section>
+				</div>
+				<div class=flex>
+					<section>
+						<h2>9.CSSの基本(1)文法とセレクタ</h2>
+						<ol>
+							<li><a href="finish/9/9.html">9.準備</a></li>
+							<li><a href="finish/9/9-1.html">9.1.CSSの記述</a></li>
+							<li><a href="finish/9/9-2.html">9.2.準備</a></li>
+							<li><a href="finish/9/9-2-1.html">9.2.1.セレクタ</a></li>
+						</ol>
+					</section>
+					<section>
+						<h2>10.CSSの基本(2)文字のスタイリング</h2>
+						<ol>
+							<li><a href="finish/10/10-1.html">10.1.プロパティ</a></li>
+						</ol>
+					</section>
+					<section>
+						<h2>11.CSSの基本(3)入れ物のスタイリング</h2>
+						<ol>
+							<li><a href="finish/11/11.html">11.準備・CSSのプロパティ</a></li>
+							<li><a href="finish/11/11-2.html">11.2.背景画像</a></li>
+							<li><a href="finish/11/11-3.html">11.3.影</a></li>
+							<li><a href="finish/11/11-4.html">11.4.角丸</a></li>
+							<li><a href="finish/11/11-5.html">11.5.グラデーション</a></li>
+							<li><a href="finish/11/11-6.html">11.6.準備</a></li>
+							<li><a href="finish/11/11-6-1.html">11.6.1.リセットCSS</a></li>
+							<li><a href="finish/11/11-6-2.html">11.6.2.ページ全体</a></li>
+							<li><a href="finish/11/11-6-3.html">11.6.3.ヘッダー</a></li>
+							<li><a href="finish/11/11-6-4.html">11.6.4.ナビゲーション</a></li>
+							<li><a href="finish/11/11-6-5.html">11.6.5.セクション</a></li>
+							<li><a href="finish/11/11-6-6.html">11.6.6.フッター</a></li>
+						</ol>
+					</section>
+				</div>
+				<div class=flex>
+					<section>
+						<h2>12.レスポンシブWebデザイン</h2>
+						<ol>
+							<li><a href="finish/12/12-1.html">12.1.viewport</a></li>
+							<li><a href="finish/12/12-2.html">12.2.@media</a></li>
+						</ol>
+					</section>
+					<section>
+						<h2>15.まとめ</h2>
+						<ol>
+							<li><a href="https://lolipop.jp/">15.3.ロリポップ(GMOペパボ株式会社)</a></li>
+							<li><a href="https://www.onamae.com/server/">15.3.お名前.comレンタルサーバ</a></li>
+							<li><a href="https://www.sakura.ne.jp/">15.3.さくらレンタルサーバ</a></li>
+							<li><a href="https://www.xrea.com/">15.3.XREA(エクスリア)</a></li>
+							<li><a href="http://www.ninja.co.jp/hp/">15.3.忍者ホームページ</a></li>
+							<li><a href="https://prog-8.com/docs/github-pages">15.3.Github page</a></li>
+							<li><a href="https://filezilla-project.org/">15.4.Filezilla</a></li>
+							<li><a href="https://cyberduck.io/">15.4.CyberDuck</a></li>
+						</ol>
+					</section>
+					<section>
+						<h2>参考</h2>
+						<h3>サンプルページ</h3>
+						<ol>
+							<li><a href="https://nakashimmer.github.io/showcase/">HTML5 Showcase</a></li>
+						</ol>
+						<h3>検証ツール</h3>
+						<ol>
+							<li><a href="https://validator.w3.org/">W3C HTML検証</a></li>
+							<li><a href="https://jigsaw.w3.org/css-validator/validator.html.ja">W3C CSS検証</a></li>
+						</ol>
+						<h3>更に学びを深める</h3>
+						<ol>
+							<li>なかしまぁ先生のHTML5教室 <a href="https://www.amazon.co.jp/dp/4802096607/">amazon</a></li>
+							</li>
+							<li><a
+									href="https://www.street-academy.com/steachers/1274?conversion_name=direct_message&tracking_code=f3037c532c76e32eb5636350d0147bc9">一日まるごとどっぷりHTML5教室(リアル教室)</a>
+							</li>
+						</ol>
+				</div>
+			</main>
+			<footer>
+				<p><small>(C)八洲学園大学 中島俊治</small></p>
+			</footer>
+		</div>
+		<script>
+			var userAgent = window.navigator.userAgent.toLowerCase();
+			const msg = document.getElementById("msg");
+
+			if (userAgent.indexOf('chrome') === -1) {
+				msg.innerHTML = "Google Chromeでアクセスすることを推奨します"
+			}
+		</script>
+	</body>
+</html>
+
