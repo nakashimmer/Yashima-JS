@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>3</title>
+		<style>
+			div {
+				border: 1px solid red;
+				width: 200px;
+				height: 200px;
+				margin: 50px auto;
+				color: skyblue;
+				text-align: center;
+				line-height: 200px;
+				transition:all 1s linear;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box1" onclick="cssChange();">CSSを操作</div>
+		<script>
+			const box1 = document.getElementById("box1");
+			function cssChange(){
+				box1.style.width = "300px";
+				box1.style.height = "300px";
+				box1.style.color = "white";
+				box1.style.backgroundColor = "skyblue";
+				box1.style.lineHeight = "300px";
+			}
+		</script>
+	</body>
+</html>
