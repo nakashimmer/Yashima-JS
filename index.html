@@ -29,23 +29,25 @@
 				background-size: auto 100%;
 				background-position: 100% 0;
 				animation: yashimaru 10s linear 10s 1 normal;
+				text-shadow: 1px 1px 0px black;
+				filter: drop-shadow(1px 1px 0px white);
 			}
 
 			@keyframes yashimaru {
 				50% {
-					background-position: 20% 0;
+					background-position: 10% 0;
 				}
 
 				70% {
-					background-position: 10% 0;
+					background-position: 0% 0;
 				}
 
 				72% {
-					background-position: 12% 0;
+					background-position: 2% 0;
 				}
 
 				74% {
-					background-position: 10% 0;
+					background-position: 0% 0;
 					background-image: url(yashiman.png);
 				}
 
@@ -54,15 +56,15 @@
 				}
 
 				80% {
-					background-position: 15% 0;
+					background-position: 5% 0;
 				}
 
 				82% {
-					background-position: 20% 0;
+					background-position: 0% 0;
 				}
 
 				90% {
-					background-position: 20% 0;
+					background-position: 0% 0;
 				}
 
 				93% {
@@ -104,7 +106,7 @@
 			h4 {
 				text-indent: 0.5em;
 				padding-top: 0px;
-				color:#666;
+				color: #666;
 			}
 
 			section {
@@ -164,6 +166,13 @@
 					display: block;
 				}
 			}
+
+			.columns {
+				columns: 3 auto;
+			}
+			.red{
+				color:red;
+			}
 		</style>
 	</head>
 	<body>
@@ -176,8 +185,8 @@
 				<div class="flex">
 					<section>
 						<h2>1.オリエン・JavaScriptの基礎知識</h2>
-						<ol>
-							<li><a href="https://renshukun.azurewebsites.net/renshuKun/?course=yashima-JS">「練習くん」</a></li>
+						<ol class="columns">
+							<li><a href="https://renshukun.azurewebsites.net/renshuKun/?course=yashima-JS" class="red">「練習くん」</a></li>
 							<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/kesan/index.html">計算</a></li>
 							<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/bmi/index.html">BMI</a></li>
 							<li><a href="https://nakashimmer.github.io/showcase/JS/calculate/uranai/index.html">占い</a></li>
@@ -194,6 +203,8 @@
 							</li>
 						</ol>
 					</section>
+				</div>
+				<div class=flex>
 					<section>
 						<h2>2.HTMLによるマークアップ</h2>
 						<ol>
@@ -211,8 +222,6 @@
 							<li><a href="3-1.html">3-1</a></li>
 						</ol>
 					</section>
-				</div>
-				<div class=flex>
 					<section>
 						<h2>4.JavaScriptとは</h2>
 						<ol>
@@ -220,6 +229,8 @@
 							<li><a href="4-1.html">4-1</a></li>
 						</ol>
 					</section>
+				</div>
+				<div class=flex>
 					<section>
 						<h2>5.ページに出力</h2>
 						<ol>
@@ -240,8 +251,6 @@
 							<li><a href="6-2-2.html">6-2-2</a></li>
 						</ol>
 					</section>
-				</div>
-				<div class=flex>
 					<section>
 						<h2>7.計算機アプリの制作</h2>
 						<ol>
@@ -249,6 +258,8 @@
 							<li><a href="7.html">7</a></li>
 						</ol>
 					</section>
+				</div>
+				<div class=flex>
 					<section>
 						<h2>8.時計アプリの制作</h2>
 						<ol>
@@ -304,26 +315,37 @@
 							<li><a href="13-2.html">13-2</a></li>
 						</ol>
 					</section>
+				</div>
+				<div class=flex>
 					<section>
 						<h2>参考</h2>
-						<h3>サンプルページ</h3>
-						<ol>
-							<li><a href="https://nakashimmer.github.io/showcase/">HTML5 Showcase</a></li>
-						</ol>
-						<h3>検証ツール</h3>
-						<ol>
-							<li><a href="https://validator.w3.org/">W3C HTML検証</a></li>
-							<li><a href="https://jigsaw.w3.org/css-validator/validator.html.ja">W3C CSS検証</a></li>
-						</ol>
-						<h3>更に学びを深める</h3>
-						<ol>
-							<li><a href="https://note.com/_nakashimmer_/n/n8a5563d15fea">VSCodeの扱い方</a></li>
-							<li>なかしまぁ先生のHTML5教室 <a href="https://www.amazon.co.jp/dp/4802096607/">amazon</a></li>
-							</li>
-							<li><a
-									href="https://www.street-academy.com/steachers/1274?conversion_name=direct_message&tracking_code=f3037c532c76e32eb5636350d0147bc9">一日まるごとどっぷりHTML5教室(リアル教室)</a>
-							</li>
-						</ol>
+						<div class="flex">
+							<div>
+								<h3>サンプルページ</h3>
+								<ol>
+									<li><a href="https://nakashimmer.github.io/showcase/">HTML5 Showcase</a></li>
+								</ol>
+							</div>
+							<div>
+								<h3>検証ツール</h3>
+								<ol>
+									<li><a href="https://validator.w3.org/">W3C HTML検証</a></li>
+									<li><a href="https://jigsaw.w3.org/css-validator/validator.html.ja">W3C CSS検証</a></li>
+								</ol>
+							</div>
+							<div>
+								<h3>更に学びを深める</h3>
+								<ol>
+									<li><a href="https://note.com/_nakashimmer_/n/n8a5563d15fea">VSCodeの扱い方</a></li>
+									<li><a href="https://www.amazon.co.jp/dp/4802096607/">「なかしまぁ先生のHTML5教室」書籍</a></li>
+									</li>
+									<li><a
+											href="https://www.street-academy.com/steachers/1274?conversion_name=direct_message&tracking_code=f3037c532c76e32eb5636350d0147bc9">一日まるごとどっぷりHTML5教室(リアル教室)</a>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</section>
 				</div>
 			</main>
 			<footer>
