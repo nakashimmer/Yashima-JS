@@ -29,8 +29,10 @@
 					n3 = n1 - n2;
 				} else if (i === 3) {
 					n3 = n1 * n2;
-				} else {
+				} else if(i === 4) {
 					n3 = n1 / n2;
+				}	else {
+					n3 = "エラー";
 				}
 				output1.innerHTML = n3;
 			}
